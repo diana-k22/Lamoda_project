@@ -1,0 +1,116 @@
+body {
+  font-family:A 'CoFo Sans Lamoda',sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+
+.Header_wrapper {
+  background-color: black;
+  height: 40px;
+  width: 100%;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.Header_delivery {
+
+
+}
+
+.Header_delivery__hover {
+  padding: 9px ;
+  display: flex;
+  align-items: center;
+}
+
+.Header_delivery__hover:hover {
+  background-color: dodgerblue;
+  transition: 0.5s ease;
+}
+
+
+.Header_delivery__text {
+  color: white;
+  font-size: 13px;
+  padding-right: 10px;
+  letter-spacing: 0.1px;
+}
+
+.Header_link {
+  display: flex;
+}
+
+.Header_link__hover:hover {
+  background-color: dodgerblue;
+  transition: 0.5s ease;
+}
+
+
+.Header_link__hover {
+  padding: 9px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+   
+}
+
+.Header_link__text {
+  color: white;
+  padding: 0 20px;
+  font-size: 13px;
+  letter-spacing: 0.1px;
+ 
+}
+
+
+.Header_link__hover:hover  .Header_modal__none{
+  display: block;
+}
+
+
+.Header_modal__none {
+  display: none;
+  position: absolute;
+  width: 230px;
+  padding: 20px 24px;
+  text-align: left;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+  top: 100%;
+  right: 0;
+
+}
+
+.Modal_text {
+  font-size: 13px;
+  color: black;
+}
+
+.Modal_text_h {
+  font-size: 13px;
+  color: dodgerblue;
+  font-family: sans-serif;
+  padding-top: 5px;
+}
+
+.Modal_text_h:hover {
+  color: blue;
+  font-family: sans-serif;
+}
+
+.Icon{
+  color: white;
+  align-items: center;
+}
+
