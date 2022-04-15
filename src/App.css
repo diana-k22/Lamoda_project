@@ -9,13 +9,13 @@ body {
 }
 
 
-.Header_wrapper {
+.header_wrapper {
   background-color: black;
   height: 40px;
   width: 100%;
 }
 
-.Header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,36 +27,36 @@ body {
 
 }
 
-.Header_delivery__hover {
+.header_delivery {
   padding: 9px ;
   display: flex;
   align-items: center;
 }
 
-.Header_delivery__hover:hover {
+.header_delivery:hover {
   background-color: dodgerblue;
   transition: 0.5s ease;
 }
 
 
-.Header_delivery__text {
+.header_delivery__text {
   color: white;
   font-size: 13px;
   padding-right: 10px;
   letter-spacing: 0.1px;
 }
 
-.Header_link {
+.header_link {
   display: flex;
 }
 
-.Header_link__hover:hover {
+.header_link__hover:hover {
   background-color: dodgerblue;
   transition: 0.5s ease;
 }
 
 
-.Header_link__hover {
+.header_link__hover {
   padding: 9px;
   position: relative;
   display: block;
@@ -66,7 +66,7 @@ body {
    
 }
 
-.Header_link__text {
+.header_link__text {
   color: white;
   padding: 0 20px;
   font-size: 13px;
@@ -75,12 +75,12 @@ body {
 }
 
 
-.Header_link__hover:hover  .Header_modal__none{
+.header_link__hover:hover  .header_modal__none{
   display: block;
 }
 
 
-.Header_modal__none {
+.header_modal__none {
   display: none;
   position: absolute;
   width: 230px;
@@ -92,12 +92,12 @@ body {
 
 }
 
-.Modal_text {
+.modal_text {
   font-size: 13px;
   color: black;
 }
 
-.Modal_text_h {
+.modal_text_h {
   font-size: 13px;
   color: dodgerblue;
   font-family: sans-serif;
