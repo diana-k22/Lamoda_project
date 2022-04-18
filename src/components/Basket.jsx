@@ -15,6 +15,6 @@ const Basket = () => {
             <button className='basket'>Корзина</button>
         </div>
     )
-}
+};
 
 export default Basket;
