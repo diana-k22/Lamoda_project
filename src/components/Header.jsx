@@ -12,35 +12,35 @@ library.add( fab, fas, faHome, faMapMarker)
 const Header = () => {
     return (
         
-        <div className='header_wrapper'>
+        <div className='header-wrapper'>
             <div className='header container'>
-                <div className='header_delivery'>
-                    <span className='header_delivery__text'>Укажите регион доставки</span>
-                    <FontAwesomeIcon icon="fa-solid fa-angle-down" className='Icon'/>
+                <div className='header-delivery'>
+                    <span className='header-delivery__text'>Укажите регион доставки</span>
+                    <FontAwesomeIcon icon="fa-solid fa-angle-down" className='icon'/>
                 </div>
-                <div className="header_link">
-                    <a href="#" className='header_link__hover'>
-                        <FontAwesomeIcon icon="fa-solid fa-mask-face" className='Icon'/>
-                        <span className='header_link__text'>Бесконтактная доставка с примеркой</span>
-                        <div className='header_modal__none'>
-                            <p className='modal_text'>Lorem ipsum dolor sit amet consectetur.</p>
-                            <p className='modal_text_h'>Подробнее</p>
+                <div className="header-link">
+                    <a href="#" className='header-link__item'>
+                        <FontAwesomeIcon icon="fa-solid fa-mask-face" className='icon'/>
+                        <span className='header-link__text'>Бесконтактная доставка с примеркой</span>
+                        <div className='header-modal__none'>
+                            <p className='modal-text'>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p className='modal-text_h'>Подробнее</p>
                         </div>
                     </a>
-                    <a href="#" className='header_link__hover'>
-                        <FontAwesomeIcon icon="fa-solid fa-credit-card" className='Icon' />
-                        <span className='header_link__text'>Платите когда хотите</span>
-                        <div className='header_modal__none'>
-                            <p className='modal_text'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam cum in assumenda velit blanditiis.</p>
-                            <p className='modal_text_h'>Подробнее</p>
+                    <a href="#" className='header-link__item'>
+                        <FontAwesomeIcon icon="fa-solid fa-credit-card" className='icon' />
+                        <span className='header-link__text'>Платите когда хотите</span>
+                        <div className='header-modal__none'>
+                            <p className='modal-text'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam cum in assumenda velit blanditiis.</p>
+                            <p className='modal-text_h'>Подробнее</p>
                         </div>
                     </a>
-                    <a href="#" className='header_link__hover'>
-                    <FontAwesomeIcon icon="fa-solid fa-clock"className='Icon' />
-                        <span className='header_link__text'>Как мы работаем сейчас</span>
-                        <div className='header_modal__none'>
-                            <p className='modal_text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, ducimus?</p>
-                            <p className='modal_text_h'>Подробнее</p>
+                    <a href="#" className='header-link__item'>
+                    <FontAwesomeIcon icon="fa-solid fa-clock"className='icon' />
+                        <span className='header-link__text'>Как мы работаем сейчас</span>
+                        <div className='header-modal__none'>
+                            <p className='modal-text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, ducimus?</p>
+                            <p className='modal-text_h'>Подробнее</p>
                         </div>
                     </a>
                 </div>

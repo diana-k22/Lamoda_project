@@ -9,11 +9,12 @@ body {
 }
 
 
-.header_wrapper {
+.header-wrapper {
   background-color: black;
   height: 40px;
   width: 100%;
 }
+
 
 .header {
   display: flex;
@@ -22,65 +23,65 @@ body {
   height: 40px;
 }
 
-.Header_delivery {
 
-
-}
-
-.header_delivery {
-  padding: 9px ;
+.header-delivery {
+  padding-left: 14px;
   display: flex;
   align-items: center;
+  height: 40px;
 }
 
-.header_delivery:hover {
+
+.header-delivery:hover {
   background-color: dodgerblue;
   transition: 0.5s ease;
 }
 
 
-.header_delivery__text {
+.header-delivery__text {
   color: white;
   font-size: 13px;
   padding-right: 10px;
   letter-spacing: 0.1px;
 }
 
-.header_link {
+
+.header-link {
   display: flex;
 }
 
-.header_link__hover:hover {
+
+.header-link__item:hover {
   background-color: dodgerblue;
   transition: 0.5s ease;
 }
 
 
-.header_link__hover {
-  padding: 9px;
+.header-link__item {
   position: relative;
-  display: block;
+  right: -14px;
+  padding-right: 20px;
   text-decoration: none;
   display: flex;
   align-items: center;
-   
+  height: 40px;
+  overflow: visible;     
 }
 
-.header_link__text {
+
+.header-link__text {
   color: white;
-  padding: 0 20px;
   font-size: 13px;
   letter-spacing: 0.1px;
- 
 }
 
 
-.header_link__hover:hover  .header_modal__none{
+.header-link__item:hover  .header-modal__none{
   display: block;
 }
 
 
-.header_modal__none {
+.header-modal__none {
   display: none;
   position: absolute;
   width: 230px;
@@ -89,28 +90,139 @@ body {
   box-shadow: 0 2px 8px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
   top: 100%;
   right: 0;
-
+  background-color: white;
 }
 
-.modal_text {
+
+.modal-text {
   font-size: 13px;
   color: black;
 }
 
-.modal_text_h {
+
+.modal-text_h {
   font-size: 13px;
   color: dodgerblue;
   font-family: sans-serif;
   padding-top: 5px;
 }
 
-.Modal_text_h:hover {
+
+.modal-text_h:hover {
   color: blue;
   font-family: sans-serif;
 }
 
-.Icon{
+
+.icon{
   color: white;
   align-items: center;
+  margin: 0px 13px 0 10px;
 }
 
+/* ------Menu-------- */
+
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0 20px;
+  height: 90px;
+}
+
+
+.menu-link {
+  text-decoration: none;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  color: #888;
+  border: 1.5px solid transparent;
+  font-size: 16px;
+}
+
+/* .active-link {
+  text-decoration: none;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  color: black;
+  font-size: 13px;
+  border:1.5px solid transparent;
+}; */
+
+/* .active-link:active {
+  transition: color .2s linear;
+  color: var(--secondaryLabelColor);
+  border-bottom: 1.5px solid #000;
+
+} */
+
+
+.menu-link:hover {
+  transition: color .2s linear;
+  color: var(--secondaryLabelColor);
+  border-bottom: 1.5px solid #000;
+}
+
+/* ---------logo--------- */
+
+.logo {
+  cursor: pointer;
+}
+
+
+.logo-text {
+  color: black;
+  font-size: 20px;
+  font-family: revert;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+/* 
+-------busket---------- */
+
+.busket-wrapper {
+
+}
+
+.busket-register {
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  color: #888;
+  padding-right: 21px;
+  margin-left: 95px;
+}
+
+
+.busket-register:hover {
+  transition: color .2s linear;
+  color: var(--secondaryLabelColor);
+  cursor: pointer;
+}
+
+
+.busket-icon {
+ cursor: pointer;
+ color: #888;
+}
+
+
+.busket-icon:hover {
+  color: var(--secondaryLabelColor);
+}
+
+
+.busket {
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  
+}
