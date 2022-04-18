@@ -6,6 +6,7 @@ import Menu from './components/Menu';
 import Logo from './components/logo';
 import Basket from './components/Basket';
 import Main from './components/Main';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,9 +20,15 @@ function App() {
       <div className='main container'>
         <Main />
       </div>
-  
+      <div className='footer container'>
+        <Footer />
+      </div>
+      <div className='line'>
+
+      </div>
     </div>
- 
+    
+
 
   );
 }
