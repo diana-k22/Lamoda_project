@@ -6,15 +6,15 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 
 library.add( fab, fas, faHome, faMapMarker)
 
-const Busket = () => {
+const Basket = () => {
     return(
-        <div className="busket-wrapper">
-            <button className='busket-register'>Войти</button>
+        <div className="basket-wrapper">
+            <button className='basket-register'>Войти</button>
 
-            <FontAwesomeIcon icon="fa-solid fa-basket-shopping" className='busket-icon' />
-            <button className='busket'>Корзина</button>
+            <FontAwesomeIcon icon="fa-solid fa-basket-shopping" className='basket-icon' />
+            <button className='basket'>Корзина</button>
         </div>
     )
 }
 
-export default Busket;
+export default Basket;

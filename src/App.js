@@ -4,7 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Logo from './components/logo';
-import Busket from './components/Busket';
+import Basket from './components/Basket';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <div className='menu-wrapper container'>
         <Menu />  
         <Logo />
-        <Busket />
+        <Basket />
       </div>
   
     </div>

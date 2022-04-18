@@ -185,13 +185,13 @@ body {
   letter-spacing: 6px;
 }
 /* 
--------busket---------- */
+-------basket---------- */
 
-.busket-wrapper {
+.basket-wrapper {
 
 }
 
-.busket-register {
+.basket-register {
   border: none;
   background-color: #fff;
   font-size: 16px;
@@ -201,25 +201,25 @@ body {
 }
 
 
-.busket-register:hover {
+.basket-register:hover {
   transition: color .2s linear;
   color: var(--secondaryLabelColor);
   cursor: pointer;
 }
 
 
-.busket-icon {
+.basket-icon {
  cursor: pointer;
  color: #888;
 }
 
 
-.busket-icon:hover {
+.basket-icon:hover {
   color: var(--secondaryLabelColor);
 }
 
 
-.busket {
+.basket {
   font-size: 16px;
   border: none;
   background-color: #fff;
