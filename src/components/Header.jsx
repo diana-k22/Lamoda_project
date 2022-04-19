@@ -17,6 +17,10 @@ const Header = () => {
                 <div className='header-delivery'>
                     <span className='header-delivery__text'>Укажите регион доставки</span>
                     <FontAwesomeIcon icon="fa-solid fa-angle-down" className='icon'/>
+                    <div className='header-modal__none'>
+                            <p className='modal-text'>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p className='modal-text_h'>Подробнее</p>
+                        </div>
                 </div>
                 <div className="header-link">
                     <a href="#" className='header-link__item'>
