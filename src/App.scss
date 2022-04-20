@@ -1,5 +1,5 @@
 body {
-  font-family:A 'CoFo Sans Lamoda',sans-serif;
+  font-family: 'CoFo Sans Lamoda',sans-serif;
 }
 
 .app-wrapper {
@@ -54,7 +54,6 @@ body {
   left: -14;
   padding-left: 14px;
 }
-
 
 
 .header-link {
@@ -249,12 +248,14 @@ body {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .navigation-item {
   height: 50px;
   display: flex;
   align-items: center;
+ 
 }
 
 
@@ -263,6 +264,19 @@ body {
   color: #000;
   padding: 0 6px 0 0;
   font-size: 16px;
+  overflow: visible; 
+}
+
+.navigation-link__first:hover .nav-none{
+  display: block;
+}
+
+.navigation-link:hover .nav-none {
+  display: block;
+}
+
+.navigation-link:hover {
+  color: #888;
 }
 
 .navigation-link {
@@ -270,6 +284,7 @@ body {
   color: #000;
   padding: 0 6px;
   font-size: 16px;
+  overflow: visible; 
 
 }
 
@@ -315,6 +330,68 @@ body {
   font-family: inherit;
   font-weight: 400;
   color: #fff;
+}
+
+
+.nav-none {
+  display: none;
+  z-index: 32;
+  padding: 15px;
+  position: absolute;
+  top: 67px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 6px 8px 0 rgb(0 0 0 / 16%);
+  box-sizing: border-box;
+}
+
+
+.nav-none__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-none__columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-none__column {
+  margin: 0 15px;
+}
+
+
+.nav-column__subtitle {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  line-height: 18px;
+  padding-bottom: 8px;
+  font-size: 13px;
+}
+
+
+.nav-column__title {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.nav-column__link {
+  text-decoration: none;
+  color: black;
+  padding: 8px 0;
+  font-size: 13px;
+}
+
+
+.navigation-link__text {
+  font-weight: 700;
+  line-height: 18px;
+  padding-bottom: 8px;
+  color: black;
 }
 /* ----Main----- */
 
