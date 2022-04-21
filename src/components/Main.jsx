@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = () => {
     return (
-        <div className='main'>
+        <div className='main container'>
             <div className='main-sale'>
                 <figure className='main-slider'>
                  <img className='main-slider__img' src="http://unsplash.it/150/200?random&amp;gravity=center" alt="img" />
@@ -18,7 +18,7 @@ const Main = () => {
                 </figure>
             </div>
 
-            <div>
+            <div className='main-collection'>
             <figure className='main-section'>
                  <img className='main-section__img' src="http://unsplash.it/150/200?random&amp;gravity=center" alt="img" />
                     <figcaption className='main-section__text'>

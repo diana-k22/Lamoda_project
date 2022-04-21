@@ -9,25 +9,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Storepage } from './pages/Storepage';
-import { Aboutpage } from './pages/Aboutpage';
-import { Notfoundpage } from './pages/Notfoundpage';
+import { StorePage } from './pages/StorePage';
+import { AboutPage } from './pages/AboutPage';
+import { NotFoundPage } from './pages/NotFoundPage';
+import Logo from './components/logo';
+import { MainContent } from './components/MainContent';
 
 
-// function App2() {
-//   return (
-//     <h1>Hello</h1>
-//   )
-//   }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="storepage" element={<Storepage />} />
-        <Route path="aboutpage" element={<Aboutpage />} />
-        <Route path="notfoundpage" element={<Notfoundpage />} />
+        
+        <Route path="/" element={<App />} >  {/**Указали у родителя шаблон App, который будет использоваться на всех страницах*/}
+          <Route path='/' element={<MainContent />} /> {/**Здесь указываем путь к страницам */}
+          <Route path="logo" element={<Logo />} />
+          <Route path="store-page" element={<StorePage />} /> 
+          <Route path="about-page" element={<AboutPage />} />
+          <Route path="not-found-page" element={<NotFoundPage />} />
+        </Route>
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

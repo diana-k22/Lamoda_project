@@ -12,16 +12,14 @@ import Content from './components/Content';
 import Footer from './components/Footer';
 import Country from './components/Country';
 import Copyright from './components/Copyright';
-import {Routes, Route, Link } from 'react-router-dom';
+import {Routes, Route, Link, Outlet } from 'react-router-dom';
+import { Test } from './components/MainContent';
 
 
-function App() {
+function App() { {/** Это шаблон главной страницы  */}
   return (
     <div className='app-wrapper'>
-      <div>
-        <Header />
-      </div>
-
+      <Header />
       <div className='menu-wrapper container'>
         <Menu />  
         <Logo />
@@ -33,29 +31,13 @@ function App() {
         <NavForm />
       </div>
 
-      <div className='main container'>
-        <Main />
-      </div>
-
-      <div className='content container'>
-        <Content />
-      </div>
+      <Outlet /> {/**В Outlet будет подставляться контент */}
 
       <div className='footer container'>
         <Footer />
       </div>
 
-      <div className='footer-line '>
-        <Country />
-      </div>
-
-      <div className='copyright'>
-        <Copyright />
-      </div>
     </div>
-    
-
-
   );
 }
 
