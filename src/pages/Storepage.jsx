@@ -1,15 +1,15 @@
 
 import React from 'react';
 import './../App.scss';
-import Store from '../components/Store';
+import SwiperSlide from '../components/SwiperSlide';
+import { ClothingCollection } from '../components/ClothingCollection';
 
 
 const StorePage = ()  => {
   return (
     <div className='app-wrapper'>
-        <div className='store'>
-            <Store />
-        </div>
+            <SwiperSlide />
+            <ClothingCollection />
     </div>
   );
 }

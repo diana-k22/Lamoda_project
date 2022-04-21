@@ -615,6 +615,79 @@ figure {
 
 // ----------------------store-------------------------------
 
-.store {
-  color: red
+
+
+.swiper-wrapper {
+  display: flex;
+  padding: 10px 0 20px 0;
+
+  .swiper-slider {
+    font-size: 12px;
+  }
+
+  .swiper-slider::after {
+    content: "/";
+    margin: 0 8px;
+    color: #888;
+  }
+
+  .swiper-slider:last-child::after {
+    content: '';
+  }
+
+  .swiper-slider__text {
+    text-decoration: none;
+    color: #888;
+  }
+
+  :hover {
+    cursor: pointer;
+    color: black;
+  }
+}
+
+.collection-wrapper {
+  padding-bottom: 15px;
+}
+
+
+.collection-title {}
+
+
+.collection-title__text {
+  color: black;
+  font-size: 24px;
+}
+
+
+.collection-main {
+  position: sticky;
+  top: 0px;
+  margin-top: 10px;
+}
+
+.collection-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+
+.collection-link {
+  padding: 6px 25px 6px 7px;
+  width: 160px;
+  margin-bottom: 10px;
+  height: 18px;
+}
+
+.collection-link:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.collection-link__text {
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
