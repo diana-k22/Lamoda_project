@@ -7,13 +7,9 @@ import Logo from './components/logo';
 import Basket from './components/Basket';
 import Navigation from './components/Navigation';
 import NavForm from './components/NavForm';
-import Main from './components/Main';
-import Content from './components/Content';
 import Footer from './components/Footer';
-import Country from './components/Country';
-import Copyright from './components/Copyright';
-import {Routes, Route, Link, Outlet } from 'react-router-dom';
-import { Test } from './components/MainContent';
+import { Outlet } from 'react-router-dom';
+import { MainComponent } from './components/MainContent';
 
 
 function App() { {/** Это шаблон главной страницы  */}
@@ -33,7 +29,7 @@ function App() { {/** Это шаблон главной страницы  */}
 
       <Outlet /> {/**В Outlet будет подставляться контент */}
 
-      <div className='footer container'>
+      <div className='footer'>
         <Footer />
       </div>
 

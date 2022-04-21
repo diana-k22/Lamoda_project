@@ -10,7 +10,7 @@ library.add(fab, fas, faHome, faMapMarker)
 
 const Footer = () => {
   return (
-    <div className='footer-wrapper'>
+    <div className='footer-wrapper container'>
       <div className='footer-item'>
         <span className='footer-title'>Помощь</span>
         <a href="#" className='footer-link'>Lorem ipsum dolor.</a>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const Menu = () => 
+const Menu = () => 
         <nav className='menu-wrapper'>
             
             <Link to='store-page' className='menu-link'>Женщинам</Link>
@@ -9,3 +9,6 @@ export const Menu = () =>
             <Link to='not-found-page' className='menu-link'>Детям</Link>
          
         </nav>
+    
+
+export default Menu;

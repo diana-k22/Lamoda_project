@@ -18,7 +18,7 @@ const Main = () => {
                 </figure>
             </div>
 
-            <div className='main-collection'>
+            <div className='main-content'>
             <figure className='main-section'>
                  <img className='main-section__img' src="http://unsplash.it/150/200?random&amp;gravity=center" alt="img" />
                     <figcaption className='main-section__text'>
