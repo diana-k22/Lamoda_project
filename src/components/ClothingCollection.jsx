@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import '../App.scss'
 import {CollectionGalery} from "./CollectionGallery";
 
-export const ClothingCollection = () => {
+export const ClothingCollection = () => { //Создали массив для вывода картинок 
   const images = [
     {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
@@ -21,15 +21,15 @@ export const ClothingCollection = () => {
     
     {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '6.999 ffhfhfhfhf',
+      subtitle: '6.99',
       title: 'lortm ipsum',
       key: 2
     }, 
     
     {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '6.999',
-      title: 'lortm ipsum fjfjfjfjfjfjfjfj',
+      subtitle: '7.000',
+      title: 'lortm ipsum',
       key: 3
     }, 
     
@@ -42,26 +42,60 @@ export const ClothingCollection = () => {
     
     {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '6.999',
-      title: 'lortm ipsum fkfkkfkfkfkfkfkfkfkfk',
+      subtitle: '7.999',
+      title: 'lortm ipsum',
       key: 5
     }, 
     
     {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '6.999',
-      title: 'lortm ipsum khkjfh',
+      subtitle: '8.999',
+      title: 'lortm ipsum',
       key: 6
 
     }, 
     
     {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '6.999',
-      title: 'lortm ipsum 567',
+      subtitle: '9.999',
+      title: 'lortm ipsum',
       key: 7
-    }
+    },
+
+    {
+        itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
+        subtitle: '6.999',
+        title: 'lortm ipsum',
+        key: 8
+      }, 
+      
+      {
+        itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
+        subtitle: '7.999',
+        title: 'lortm ipsum',
+        key: 9
+      }, 
+      
+      {
+        itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
+        subtitle: '8.999',
+        title: 'lortm ipsum',
+        key: 10
+  
+      }, 
+      
+      {
+        itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
+        subtitle: '9.999',
+        title: 'lortm ipsum',
+        key: 11
+      }
+
+    
   ]
+
+
+
   return (
     <div className="collection-wrapper container">
       <div className="collection-title">
@@ -89,8 +123,10 @@ export const ClothingCollection = () => {
         </div>
 
         <div className="collection-gallery">
+       
+            {/* цикл, который перебирает массив и выводит */}
 
-          {images.map((image) => <CollectionGalery
+          {images.map((image) => <CollectionGalery 
             itemGallery={image.itemGallery}
             subtitle={image.subtitle}
             title={image.title}

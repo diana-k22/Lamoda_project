@@ -8,12 +8,12 @@ export const CollectionGalery = ({itemGallery, subtitle, title}) => {
     return (
 
         <div className="catalog-wrapper">
-           <div>
-               <img src={itemGallery} alt="phot" />
+           <div className="catalog-gallery">
+               <img className="catalog-gallery__item" src={itemGallery} alt="phot" />
            </div>
-           <div>
-                <span> {subtitle} </span>
-                <span> {title} </span>
+           <div className="catalog-text">
+                <span className="catalog-subtitle"> {subtitle} </span>
+                <span className="catalog-title"> {title} </span>
            </div>
 
 
