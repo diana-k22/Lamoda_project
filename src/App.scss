@@ -749,3 +749,62 @@ figure {
   font-size: 13px;
 
 }
+
+
+
+.notFoundPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 150px 0;
+}
+
+
+.notFoundPage-oops {
+font-size: 128px;
+font-weight: 800;
+color: rgb(130, 85, 203);
+// color: rgb(156, 85, 203);
+text-align: center;
+margin: 0;
+}
+
+.notFoundPage-text {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin: 6px 0;
+}
+
+.notFoundPage-description {
+  width: 343px;
+  font-size: 13px;
+  color: black;
+  text-align: center;
+  margin: 15px 0 22px;
+}
+
+.notFoundPage-btn {
+    border: none;
+    padding: 13px;
+    border-radius: 29px;
+    background-color: rgb(39, 154, 224);
+}
+
+.notFoundPage-btn:hover {
+  color: black;
+  background-color: rgb(41, 133, 232);
+  cursor: pointer;
+
+}
+
+.notFoundPage-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}

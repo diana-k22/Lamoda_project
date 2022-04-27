@@ -1,9 +1,11 @@
+import { ClothingCollection } from "../components/ClothingCollection"
+import SwiperSlide from "../components/SwiperSlide"
 
 export const AboutPage = () => {
     return(
         <div>
-            <h1>About us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <SwiperSlide />
+            <ClothingCollection />
         </div>
     )
 }
