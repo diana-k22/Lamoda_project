@@ -9,7 +9,8 @@ const StorePage = ()  => {
   return (
     <div className='app-wrapper'>
             <SwiperSlide />
-            <ClothingCollection />
+            <ClothingCollection
+            title={'Женская одежда, обувь и аксессуары'} />
     </div>
   );
 }

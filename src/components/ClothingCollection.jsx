@@ -2,8 +2,9 @@ import React from "react";
 import {Link} from "react-router-dom";
 import '../App.scss'
 import {CollectionGalery} from "./CollectionGallery";
+import { ClothingCollectionMan } from "./ClothingCollectionMan";
 
-export const ClothingCollection = () => { //Создали массив для вывода картинок 
+export const ClothingCollection = (props) => { //Создали массив для вывода картинок 
   const images = [
     {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
@@ -94,12 +95,10 @@ export const ClothingCollection = () => { //Создали массив для �
     
   ]
 
-
-
   return (
     <div className="collection-wrapper container">
       <div className="collection-title">
-        <span className="collection-title__text">Женская одежда, обувь и аксессуары</span>
+        <span className="collection-title__text">{props.title}</span>
       </div>
 
       <div className="collection-main">
