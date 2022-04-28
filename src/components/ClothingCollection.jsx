@@ -2,7 +2,8 @@ import React from "react";
 import {Link} from "react-router-dom";
 import '../App.scss'
 import {CollectionGallery} from "./CollectionGallery";
-
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 export const ClothingCollection = (props) => { //Создали массив для вывода картинок
   const images = [
@@ -108,12 +109,14 @@ export const ClothingCollection = (props) => { //Создали массив д�
             title={image.title}
             key={image.key}/>)}
 
-  
-
         </div>
 
       </div>
-
+      <div className="pagination">
+          <Stack spacing={2}>
+            <Pagination count={10}/>
+          </Stack>
+        </div>
     </div>
   )
 }
