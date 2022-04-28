@@ -8,11 +8,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { StorePage } from './pages/StorePage';
-import { AboutPage } from './pages/AboutPage';
-import { NotFoundPage } from './pages/NotFoundPage';
 import Logo from './components/logo';
 import { MainContent } from './components/MainContent';
+import { StorePageForWomen } from './pages/StorePageForWomen';
+import { StorePageForMan } from './pages/StorePageForMan';
+import { StorePageForChildren } from './pages/StorePageForChildren';
+import { NotFoundPage } from './pages/NotFoundPage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,9 +25,10 @@ root.render(
         <Route path="/" element={<App />} >  {/**Указали у родителя шаблон App, который будет использоваться на всех страницах*/}
           <Route path='/' element={<MainContent />} /> {/**Здесь указываем путь к страницам */}
           <Route path="logo" element={<Logo />} />
-          <Route path="store-page" element={<StorePage />} /> 
-          <Route path="about-page" element={<AboutPage />} />
-          <Route path="not-found-page" element={<NotFoundPage />} />
+          <Route path="store-page-for-women" element={<StorePageForWomen />} /> 
+          <Route path="store-page-for-man" element={<StorePageForMan />} />
+          <Route path="store-page-for-children" element={<StorePageForChildren />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
 
       </Routes>

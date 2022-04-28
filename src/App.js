@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './App.scss';
 import Header from './components/Header';
@@ -9,7 +8,7 @@ import Navigation from './components/Navigation';
 import NavForm from './components/NavForm';
 import Footer from './components/Footer';
 import { Outlet } from 'react-router-dom';
-import { MainComponent } from './components/MainContent';
+
 
 
 function App() { {/** Это шаблон главной страницы  */}
