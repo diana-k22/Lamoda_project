@@ -4,11 +4,14 @@ import SwiperSlide from "../components/SwiperSlide";
 
 
 
-export const StorePageForChildren = () => {
+export const StorePageForChildren = (props) => {
+    const titleChild = ['Мальчикам', 'Девочкам', 'Новорожденным']
+
+
     return (
         <div>
             <SwiperSlide />
-            <ClothingCollection title={'Детская одежда, обувь и аксессуары'} />
+            <ClothingCollection subtitle={'Детская одежда, обувь и аксессуары'} titles={titleChild}/>
         </div>
     )
 }

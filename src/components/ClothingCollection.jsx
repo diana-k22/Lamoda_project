@@ -1,16 +1,16 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import '../App.scss'
-import {CollectionGallery} from "./CollectionGallery";
+
 import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
+import {CatalogProduct} from "./CatalogProduct";
 
 export const ClothingCollection = (props) => { //Создали массив для вывода картинок
   const images = [
     {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
       subtitle: '6.999',
-      title: 'lortm ipsum',
+      title: 'lortm ',
       key: 0
     }, {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
@@ -20,7 +20,7 @@ export const ClothingCollection = (props) => { //Создали массив д�
     }, {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
       subtitle: '6.99',
-      title: 'lortm ipsum',
+      title: 'lortm',
       key: 2
     }, {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
@@ -35,7 +35,7 @@ export const ClothingCollection = (props) => { //Создали массив д�
     }, {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
       subtitle: '7.999',
-      title: 'lortm ipsum',
+      title: 'lortm',
       key: 5
     }, {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
@@ -46,7 +46,7 @@ export const ClothingCollection = (props) => { //Создали массив д�
     }, {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
       subtitle: '9.999',
-      title: 'lortm ipsum',
+      title: 'lortm',
       key: 7
     }, {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
@@ -61,7 +61,7 @@ export const ClothingCollection = (props) => { //Создали массив д�
     }, {
       itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
       subtitle: '8.999',
-      title: 'lortm ipsum',
+      title: 'lortm',
       key: 10
 
     }, {
@@ -73,50 +73,37 @@ export const ClothingCollection = (props) => { //Создали массив д�
 
   ]
 
+
   return (
     <div className="collection-wrapper container">
-      <div className="collection-title">
-        <span className="collection-title__text">{props.title}</span>
+      <div className="collection-subtitle">
+        <span className="collection-subtitle__text">{props.subtitle}</span>
       </div>
 
       <div className="collection-main">
         <div className="collection-navigation">
-          <div className="collection-link">
-            <Link to='#' className="collection-link__text">Обувь</Link>
-          </div>
-          <div className="collection-link">
-            <Link to='#' className="collection-link__text">Одежда</Link>
-          </div>
-          <div className="collection-link">
-            <Link to='#' className="collection-link__text">Аксессуары</Link>
-          </div>
-          <div className="collection-link">
-            <Link to='#' className="collection-link__text">Primium</Link>
-          </div>
-          <div className="collection-link">
-            <Link to='#' className="collection-link__text">Спорт</Link>
-          </div>
+            {/* У родителя (StorePageWomen-Man-Children)есть массив категорий товаров, который мы передаем в этот компонент (ClothingCollection)через пропс   */}
+          {props.titles.map((title) => (
+           <div key={title} className="collection-link">
+              <Link to='#' className="collection-link__text">{title}</Link>
+            </div>
+          ))}
 
         </div>
 
         <div className="collection-gallery">
+          {/* цикл, который перебирает массив с товарами и рендерит */}
 
-          {/* цикл, который перебирает массив и выводит */}
-
-          {images.map((image) => <CollectionGallery
+          {images.map((image) => <CatalogProduct
             itemGallery={image.itemGallery}
             subtitle={image.subtitle}
             title={image.title}
             key={image.key}/>)}
-
+            
         </div>
 
       </div>
-      <div className="pagination">
-          <Stack spacing={2}>
-            <Pagination count={10}/>
-          </Stack>
-        </div>
+        <Pagination />
     </div>
   )
 }

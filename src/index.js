@@ -14,6 +14,8 @@ import { StorePageForWomen } from './pages/StorePageForWomen';
 import { StorePageForMan } from './pages/StorePageForMan';
 import { StorePageForChildren } from './pages/StorePageForChildren';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { DetailsProduct } from './components/DetailsProduct';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,6 +30,8 @@ root.render(
           <Route path="store-page-for-women" element={<StorePageForWomen />} /> 
           <Route path="store-page-for-man" element={<StorePageForMan />} />
           <Route path="store-page-for-children" element={<StorePageForChildren />} />
+          <Route path="details-product" element={<DetailsProduct/>} />
+
           <Route path="*" element={<NotFoundPage />} />
         </Route>
 

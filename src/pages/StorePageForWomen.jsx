@@ -4,11 +4,14 @@ import SwiperSlide from '../components/SwiperSlide';
 import { ClothingCollection } from '../components/ClothingCollection';
 
 
-export const StorePageForWomen = ()  => {
+export const StorePageForWomen = ({props})  => {
+  const titles = ['Обувь', 'Одежда', 'Аксессуары', 'Premium', 'Спорт']
+  
   return (
+
     <div className='app-wrapper'>
             <SwiperSlide />
-            <ClothingCollection title={'Женская одежда, обувь и аксессуары'} />
+            <ClothingCollection subtitle={'Женская одежда, обувь и аксессуары'}  titles = {titles}/>
     </div>
   );
 }

@@ -651,10 +651,10 @@ figure {
 }
 
 
-.collection-title {}
+.collection-subtitle {}
 
 
-.collection-title__text {
+.collection-subtitle__text {
   color: black;
   font-size: 24px;
 }
@@ -747,6 +747,8 @@ figure {
 
 .catalog-title {
   font-size: 13px;
+  text-decoration: none;
+  color: black;
 
 }
 
