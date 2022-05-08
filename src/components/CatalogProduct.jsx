@@ -1,15 +1,19 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 import '../App.scss'
-import {DetailsProduct} from "./DetailsProduct";
 
-export const CatalogProduct = ({itemGallery, subtitle, title}) => {
-  // const clickItem = (e) => {     e.preventDefault();     <DetailsProduct/> };
+
+export const CatalogProduct = ({itemGallery, subtitle, title, pathToProduct}) => {
+  let navigate = useNavigate() //Создаем переменную, которая вызывает useNavigate() из реакт роутера
+  const goToProductPage = (e) => {    
+       navigate(pathToProduct)
+    }
+       
 
   return (
-    <div className="catalog-wrapper">
-
+    <div onClick={goToProductPage} className="catalog-wrapper"> {/** Добавили клик по блоку, вызывается ф-ция которая переходит по клику на определенный путь стр */}
+         
       <div className="catalog-gallery">
         <img className="catalog-gallery__item" src={itemGallery} alt="cloth"/>
       </div>

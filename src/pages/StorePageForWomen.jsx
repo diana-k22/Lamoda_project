@@ -4,6 +4,7 @@ import SwiperSlide from '../components/SwiperSlide';
 import { ClothingCollection } from '../components/ClothingCollection';
 
 
+
 export const StorePageForWomen = ({props})  => {
   const titles = ['Обувь', 'Одежда', 'Аксессуары', 'Premium', 'Спорт']
   

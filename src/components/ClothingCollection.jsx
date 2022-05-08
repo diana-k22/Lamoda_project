@@ -4,75 +4,9 @@ import '../App.scss'
 
 import Pagination from '@mui/material/Pagination';
 import {CatalogProduct} from "./CatalogProduct";
+import { products } from "../data/products";
 
 export const ClothingCollection = (props) => { //Создали массив для вывода картинок
-  const images = [
-    {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '6.999',
-      title: 'lortm ',
-      key: 0
-    }, {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '6.999',
-      title: 'lortm ipsum',
-      key: 1
-    }, {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '6.99',
-      title: 'lortm',
-      key: 2
-    }, {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '7.000',
-      title: 'lortm ipsum',
-      key: 3
-    }, {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '6.999',
-      title: 'lortm ipsum',
-      key: 4
-    }, {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '7.999',
-      title: 'lortm',
-      key: 5
-    }, {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '8.999',
-      title: 'lortm ipsum',
-      key: 6
-
-    }, {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '9.999',
-      title: 'lortm',
-      key: 7
-    }, {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '6.999',
-      title: 'lortm ipsum',
-      key: 8
-    }, {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '7.999',
-      title: 'lortm ipsum',
-      key: 9
-    }, {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '8.999',
-      title: 'lortm',
-      key: 10
-
-    }, {
-      itemGallery: "http://unsplash.it/150/200?random&amp;gravity=center",
-      subtitle: '9.999',
-      title: 'lortm ipsum',
-      key: 11
-    }
-
-  ]
-
 
   return (
     <div className="collection-wrapper container">
@@ -94,14 +28,14 @@ export const ClothingCollection = (props) => { //Создали массив д�
         <div className="collection-gallery">
           {/* цикл, который перебирает массив с товарами и рендерит */}
 
-          {images.map((image) => <CatalogProduct
-            itemGallery={image.itemGallery}
-            subtitle={image.subtitle}
-            title={image.title}
-            key={image.key}/>)}
+          {products.map((product) => <CatalogProduct
+            itemGallery={product.itemGallery}
+            subtitle={product.subtitle}
+            title={product.title}
+            pathToProduct={`/products/${product.key}`} //Указываем путь к новой стр конкретного продукта
+            key={product.key}/>)}
             
         </div>
-
       </div>
         <Pagination />
     </div>

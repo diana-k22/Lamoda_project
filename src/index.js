@@ -14,7 +14,7 @@ import { StorePageForWomen } from './pages/StorePageForWomen';
 import { StorePageForMan } from './pages/StorePageForMan';
 import { StorePageForChildren } from './pages/StorePageForChildren';
 import { NotFoundPage } from './pages/NotFoundPage';
-import { DetailsProduct } from './components/DetailsProduct';
+import { ProductDetails } from './components/ProductDetails';
 
 
 
@@ -27,10 +27,10 @@ root.render(
         <Route path="/" element={<App />} >  {/**Указали у родителя шаблон App, который будет использоваться на всех страницах*/}
           <Route path='/' element={<MainContent />} /> {/**Здесь указываем путь к страницам */}
           <Route path="logo" element={<Logo />} />
-          <Route path="store-page-for-women" element={<StorePageForWomen />} /> 
+          <Route path="store-page-for-women" element={<StorePageForWomen />} />
+          <Route path="products/:productId" element={<ProductDetails/>} /> {/**Создали роут для перехода страницы при клике, который читает айдишник  :- Способ сказать роуту что /:блабла является параметром - https://reactrouter.com/docs/en/v6/getting-started/overview#reading-url-parameters */}
           <Route path="store-page-for-man" element={<StorePageForMan />} />
           <Route path="store-page-for-children" element={<StorePageForChildren />} />
-          <Route path="details-product" element={<DetailsProduct/>} />
 
           <Route path="*" element={<NotFoundPage />} />
         </Route>
