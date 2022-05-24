@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { StyledLogo } from './styles/Logo.styled';
+
+
 
 const Logo = () => {
     return(
-        <div className='logo'>
+        <StyledLogo>
             <Link to='/' className='logo-text'> DiShop</Link>
-        </div>
+        </StyledLogo>
     )
 }
 

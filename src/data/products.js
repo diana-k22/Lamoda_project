@@ -130,8 +130,7 @@ export const products = [
     }
   ]
  
-
-
+  
 const getProductById = (productId) => {
     return products.find((product) => product.key.toString() === productId) //Возвращает продукт из массива удовлетворяющий условие 
 }
@@ -140,14 +139,8 @@ const categoryFilter = (category) => {
     return products.filter((product) => product.category === category) // Фильтрует категории(Например: если категория женщины === женщины, тогда рендерит товар)
 }
 
-// const productCategoryFilter = (productCategory) => {
-//     return products.filter((product) => product.productCategory === productCategory)
-// }
-
 export {
     getProductById,
     categoryFilter,
-    // productCategoryFilter 
-
 }
 

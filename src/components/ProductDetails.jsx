@@ -7,11 +7,9 @@ export const ProductDetails = () => {
     const products = getProductById(params.productId)// 
     return( 
         <div className="product-details container">
-            {/* <h2>Product {product.title}</h2>
-            <img className="catalog-gallery__item" src={product.itemGallery} alt="cloth"/>
-            <div>{product.details.price}</div>
-            <div>{product.subtitle}</div> */}
+            <img src={products.itemGallery} width='260px' height='350px'alt="cloth" />
             <h2>{products.title}</h2>
+            <span>{products.price}</span>
         </div>
     )
 }

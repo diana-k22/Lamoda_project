@@ -1,10 +1,11 @@
 import React from "react";
+import { StyledNavigation } from "./styles/Navigation.styled";
 
 const Navigation = () => {
 
   return (
 
-    <div className="navigation-wrapper">
+    <StyledNavigation>
       <nav className="navigation-item">
         <div className="navigation-link__first">
           <span>Идеи</span>
@@ -12,18 +13,18 @@ const Navigation = () => {
             <div className="nav-none__wrapper ">
               <div className="nav-none__columns">
                 <div className="nav-none__column">
-                  <a href="#" className="nav-column__subtitle">Одежда</a>
+                  <a href="../App.js" className="nav-column__subtitle">Одежда</a>
                   <div className="nav-column__title">
-                    <a href="#" className="nav-column__link">Lorem, dolor</a>
-                    <a href="#" className="nav-column__link">Lorem, ipsum</a>
-                    <a href="#" className="nav-column__link">lorem</a>
-                    <a href="#" className="nav-column__link">Lorem ipsum dolor sit.</a>
-                    <a href="#" className="nav-column__link">Lorem</a>
-                    <a href="#" className="nav-column__link">Lorem, ipsum dolor</a>
-                    <a href="#" className="nav-column__link">Lorem, ipsum.</a>
-                    <a href="#" className="nav-column__link">Lorem, ipsum dolor</a>
-                    <a href="#" className="nav-column__link">lorem</a>
-                    <a href="#" className="nav-column__link">Lorem, ipsum</a>
+                    <a href="../App.js" className="nav-column__link">Lorem, dolor</a>
+                    <a href="../App.js" className="nav-column__link">Lorem, ipsum</a>
+                    <a href="../App.js" className="nav-column__link">lorem</a>
+                    <a href="../App.js" className="nav-column__link">Lorem ipsum dolor sit.</a>
+                    <a href="../App.js" className="nav-column__link">Lorem</a>
+                    <a href="../App.js" className="nav-column__link">Lorem, ipsum dolor</a>
+                    <a href="../App.js" className="nav-column__link">Lorem, ipsum.</a>
+                    <a href="../App.js" className="nav-column__link">Lorem, ipsum dolor</a>
+                    <a href="../App.js" className="nav-column__link">lorem</a>
+                    <a href="../App.js" className="nav-column__link">Lorem, ipsum</a>
 
                   </div>
                 </div>
@@ -778,7 +779,7 @@ const Navigation = () => {
 
       </nav>
 
-    </div>
+    </StyledNavigation>
 
   )
 }

@@ -8,31 +8,53 @@ import Navigation from './components/Navigation';
 import NavForm from './components/NavForm';
 import Footer from './components/Footer';
 import { Outlet } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import { Container, GlobalStyles } from '@mui/material';
+import { MenuWrapperStyled } from './components/styles/MenuWrapper.styled';
+import { StyledNavWrapper } from './components/styles/NavigationWrapper.styled';
 
 
+
+const theme = {
+  colors: {
+    header: 'black',
+    body: 'white',
+    footer: '#003333',
+  },
+  
+  mobile: '768px',
+}
 
 function App() { {/** Это шаблон главной страницы  */}
   return (
-    <div className='app-wrapper'>
-      <Header />
-      <div className='menu-wrapper container'>
-        <Menu />  
-        <Logo />
-        <Basket />
-      </div>
+    
+    <ThemeProvider theme={theme} >
+      <GlobalStyles/>
+        <Header />
+        <Container>
+          <MenuWrapperStyled>
+            <Menu />  
+            <Logo />
+            <Basket />
+          </MenuWrapperStyled>
+        </Container>
 
-      <div className='navigation container'>
-        <Navigation />
-        <NavForm />
-      </div>
-
-      <Outlet /> {/**В Outlet будет подставляться контент */}
-
+        <Container>
+          <StyledNavWrapper>
+            <Navigation />
+            <NavForm />
+          </StyledNavWrapper>
+        </Container>
+        
+      <Container>
+        <Outlet /> {/**В Outlet будет подставляться контент */}
+      </Container>
+      
       <div className='footer'>
         <Footer />
       </div>
 
-    </div>
+    </ThemeProvider>
   );
 }
 
