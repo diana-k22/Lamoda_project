@@ -3,7 +3,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fas, faHome, faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { StyledBasket } from './styles/Basket.styled';
+import { StyledBasket } from './Basket.styled';
 
 library.add( fab, fas, faHome, faMapMarker)
 

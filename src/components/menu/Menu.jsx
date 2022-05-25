@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { StyledMenu } from './styles/Menu.styled';
+import { StyledMenu } from './Menu.styled';
 
 
 

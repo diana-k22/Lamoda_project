@@ -4,8 +4,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {fas, faHome, faMapMarker} from '@fortawesome/free-solid-svg-icons';
 import {fab} from '@fortawesome/free-brands-svg-icons';
 import {HeaderLinkItem} from './HeaderLinkItem';
-import { Container } from '@mui/material';
-import { StyledHeader } from './styles/Header.styled';
+import { Container } from '../styles/Container.styled';
+import { StyledHeader } from './Header.styled';
 
 
 
@@ -14,7 +14,7 @@ library.add(fab, fas, faHome, faMapMarker)
 
 const Header = () => {
   return (
-    <StyledHeader className='header-wrapper'>
+    <StyledHeader>
       <Container className='header'>
           <div className='header-delivery'>
             <span className='header-delivery__text'>Укажите регион доставки</span> 

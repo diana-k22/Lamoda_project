@@ -1,6 +1,6 @@
 import React from "react";
 import { ClothingCollection } from "../components/ClothingCollection";
-import SwiperSlide from "../components/SwiperSlide";
+import SwiperSlide from '../components/SwiperSlide';
 import { CATEGORY, categoryFilter } from '../data/products';
 
 

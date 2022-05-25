@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledNavigation } from "./styles/Navigation.styled";
+import { StyledNavigation } from "./Navigation.styled";
 
 const Navigation = () => {
 

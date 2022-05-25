@@ -54,7 +54,7 @@ export const StyledNavigation = styled.div`
         width: 100%;
         background-color: white;
         box-shadow: 0 6px 8px 0 rgb(0 0 0 / 16%);
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
 
         &__wrapper {
             display: flex;

@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledNavForm } from "./styles/NavForm.styled";
+import { StyledNavForm } from "./NavForm.styled";
 
 const NavForm = () => {
     return (

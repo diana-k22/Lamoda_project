@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledHeader = styled.div `
     background-color: ${ ({theme}) => theme.colors.header};
+    
     .header-wrapper {
         height: 40px;
         width: 100%;
