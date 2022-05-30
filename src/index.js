@@ -14,7 +14,7 @@ import { StorePageForWomen } from './pages/PageWomen/StorePageForWomen';
 import { StorePageForMan } from './pages/PageMan/StorePageForMan';
 import { StorePageForChildren } from './pages/PageForChildren/StorePageForChildren';
 import { NotFoundPage } from './pages/PageNotFound/NotFoundPage';
-import { ProductDetails } from './components/ProductDetails';
+import { ProductDetails } from './components/CollectionCards/ProductDetails';
 
 
 
