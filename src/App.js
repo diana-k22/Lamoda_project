@@ -52,10 +52,8 @@ function App() { {/** Это шаблон главной страницы  */}
             <Outlet /> {/**В Outlet будет подставляться контент */}
           </Container>
 
-          <div className='footer'>
-            <Footer />
-          </div>
-
+          <Footer />
+      
     </ThemeProvider>
   );
 }
