@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate} from "react-router-dom";
 
-import '../App.scss'
+import '../../App.scss'
 
 
 export const CatalogProduct = ({itemGallery, price, title, pathToProduct}) => {

@@ -1,13 +1,16 @@
-import { Stack } from "@mui/material";
+import { Stack } from "react";
 import React from "react";
 import '../App.scss'
+import { StyledPagination } from "./Pagination.styled";
 
 export const Pagination = () => {
     return (
-        <div className="pagination">
-        <Stack spacing={2}>
-          <Pagination count={10}/>
-        </Stack>
-      </div>
+      <StyledPagination>
+          
+          <Stack spacing={2}>
+            <Pagination count={10}/>
+          </Stack>
+ 
+      </StyledPagination>
     )
 }

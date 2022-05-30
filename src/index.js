@@ -9,11 +9,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Logo from './components/menu/logo';
-import { MainContent } from './pages/mainPage/MainContent';
-import { StorePageForWomen } from './pages/StorePageForWomen';
-import { StorePageForMan } from './pages/StorePageForMan';
-import { StorePageForChildren } from './pages/StorePageForChildren';
-import { NotFoundPage } from './pages/NotFoundPage';
+import { MainContent } from './pages/PageMain/MainContent';
+import { StorePageForWomen } from './pages/PageWomen/StorePageForWomen';
+import { StorePageForMan } from './pages/PageMan/StorePageForMan';
+import { StorePageForChildren } from './pages/PageForChildren/StorePageForChildren';
+import { NotFoundPage } from './pages/PageNotFound/NotFoundPage';
 import { ProductDetails } from './components/ProductDetails';
 
 

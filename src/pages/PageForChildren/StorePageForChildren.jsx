@@ -1,7 +1,11 @@
 import React from "react";
-import { ClothingCollection } from "../components/ClothingCollection";
-import SwiperSlide from '../components/SwiperSlide';
-import { CATEGORY, categoryFilter } from '../data/products';
+import { ClothingCollection } from "../../components/CollectionCards/ClothingCollection";
+import SwiperSlide from '../../components/breadcrumbs/SwiperSlide';
+import { CATEGORY, categoryFilter } from '../../data/products';
+import styled from 'styled-components'
+import { StyledPageForWomen } from "../PageWomen/StorePageForWomen.styled";
+
+const StyledPageForChildren = styled(StyledPageForWomen)``
 
 
 export const StorePageForChildren = (props) => {
@@ -9,13 +13,13 @@ export const StorePageForChildren = (props) => {
     const productsForChildren = categoryFilter(CATEGORY.children)
 
     return (
-        <div>
+        <StyledPageForChildren>
             <SwiperSlide />
             <ClothingCollection 
                 subtitle={'Детская одежда, обувь и аксессуары'}
                 titles={titleChild}
                 products={productsForChildren}
             />
-        </div>
+        </StyledPageForChildren>
     )
 }
