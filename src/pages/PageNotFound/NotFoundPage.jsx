@@ -67,8 +67,8 @@ export const NotFoundPage = () => {
                 <p className='notFoundPage-text'>404 - Page not found</p>
                 <p className='notFoundPage-description'>The page you are looking for might have been removed had its name changed or is temporarily unavailable. </p>
                
-                <Button ><StyledLinkPagePrimary className='notFoundPage-link' to='/'>GO TO HOMEPAGE</StyledLinkPagePrimary></Button>
-                <Button primary><StyledLinkPage className='notFoundPage-link' to='/'>GO TO HOMEPAGE</StyledLinkPage></Button>
+                <Button ><StyledLinkPagePrimary to='/'>GO TO HOMEPAGE</StyledLinkPagePrimary></Button>
+                <Button primary><StyledLinkPage to='/'>GO TO HOMEPAGE</StyledLinkPage></Button>
                 <Button as={ReversedButton}>Custom Button with Normal Button styles</Button>
             </div>
 

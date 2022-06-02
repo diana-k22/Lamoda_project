@@ -32,15 +32,13 @@ export const StyledNotFound = styled.div`
             margin: 15px 0 22px;
         }
 
-        &-link {
+        /* &-link {
             text-transform: uppercase;
             text-decoration: none;
             align-items: center;
-            /* color: ${props => props.primary ? "#561db3" : "red"}; */
-            /* color: ${props => props.color || "palevioletred"}; */
             font-size: 12px;
             letter-spacing: 0.5px;
-        }       
+        }        */
     }
 
 

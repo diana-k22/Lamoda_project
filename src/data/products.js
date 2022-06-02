@@ -129,7 +129,7 @@ export const products = [
       }
     }
   ]
- 
+ // Перенести папку в сервер, по пути /api/product/'productId' возвращать json с данными из объекта выше(почитать про promise http )
   
 const getProductById = (productId) => {
     return products.find((product) => product.key.toString() === productId) //Возвращает продукт из массива удовлетворяющий условие 

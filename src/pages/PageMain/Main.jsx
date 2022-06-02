@@ -4,6 +4,14 @@ import { StyledMain } from './Main.styled';
 
 
 const Main = () => {
+    // fetch('https://api.product')
+    //     .then((response) => {
+    //         console.log(response)
+    //         return response.json();
+    //     })
+    //     .then((data) => {
+    //         console.log(data.quote);
+    //     });
     return (
         <StyledMain>
             <Flex>

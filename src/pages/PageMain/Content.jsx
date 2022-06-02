@@ -3,6 +3,7 @@ import { Flex } from "../../components/styles/Flex.styled";
 import { StyledContent } from "./Content.styled";
 
 
+
 const Content = () => {
   return (
     <StyledContent className='content'>
@@ -53,6 +54,7 @@ const Content = () => {
           </figure>
         </div>
       </Flex>
+      
     </StyledContent>
   )
 }

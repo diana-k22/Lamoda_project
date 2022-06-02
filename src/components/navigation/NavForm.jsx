@@ -9,6 +9,7 @@ export const HeaderButton = styled(Button)`
     cursor: pointer;
     border: none;
     padding: 12px 13px;
+    margin: 0;
 `
 
 export const Input = styled.input`
