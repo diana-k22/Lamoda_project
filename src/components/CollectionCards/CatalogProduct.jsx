@@ -5,6 +5,18 @@ import '../../App.scss'
 
 
 export const CatalogProduct = ({itemGallery, price, title, pathToProduct}) => {
+  let products = []
+
+  fetch('http://localhost:4001/')
+  .then((response) => {
+    products = response;
+
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });
+
   let navigate = useNavigate() //Создаем переменную, которая вызывает useNavigate() из реакт роутера
   const goToProductPage = (e) => {    
        navigate(pathToProduct)

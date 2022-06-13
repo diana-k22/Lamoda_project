@@ -1,0 +1,198 @@
+[
+  {
+    "itemGallery": "http://picsum.photos/id/535/150/200",
+    "price": "6.999",
+    "title": "T-shirt",
+    "category": "woman",
+    "productCategory": "clothes",
+    "id": 0,
+    "details": [
+      {
+        "name": "Women",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+  }, {
+    "itemGallery": "http://picsum.photos/id/1025/150/200",
+    "price": "6.999",
+    "title": "Coat",
+    "category": "man",
+    "productCategory": "clothes",
+    "id": 1,
+    "details": [
+      {
+        "name": "Man",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+  }, {
+    "itemGallery": "http://picsum.photos/id/177/150/200",
+    "price": "6.99",
+    "title": "Shorts",
+    "category": "children",
+    "productCategory": "clothes",
+    "id": 2,
+    "details": [
+      {
+        "name": "children",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+  }, {
+    "itemGallery": "http://picsum.photos/id/103/150/200",
+    "price": "7.000",
+    "title": "Boots",
+    "category": "man",
+    "productCategory": "boots",
+    "id": 3,
+    "details": [
+      {
+        "name": "Man",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+  }, {
+    "itemGallery": "http://picsum.photos/id/31/150/200",
+    "price": "6.999",
+    "title": "Socks",
+    "category": "woman",
+    "productCategory": "clothes",
+    "id": 4,
+    "details": [
+      {
+        "name": "woman",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+  }, {
+    "itemGallery": "http://picsum.photos/id/22/150/200",
+    "price": "7.999",
+    "title": "Trousers",
+    "category": "man",
+    "productCategory": "clothes",
+    "id": 5,
+    "details": [
+      {
+        "name": "man",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+  }, {
+    "itemGallery": "http://picsum.photos/id/319/150/200",
+    "price": "8.999",
+    "title": "Jacket",
+    "category": "man",
+    "productCategory": "clothes",
+    "id": 6,
+    "details": [
+      {
+        "name": "man",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+
+  }, {
+    "itemGallery": "http://picsum.photos/id/349/150/200",
+    "price": "9.999",
+    "title": "Shirt",
+    "category": "children",
+    "productCategory": "clothes",
+    "id": 7,
+    "details": [
+      {
+        "name": "children",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+  }, {
+    "itemGallery": "http://picsum.photos/id/449/150/200",
+    "price": "6.999",
+    "title": "Bra",
+    "category": "woman",
+    "productCategory": "accessories",
+    "id": 8,
+    "details": [
+      {
+        "name": "woman",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+  }, {
+    "itemGallery": "http://picsum.photos/id/338/150/200",
+    "price": "7.999",
+    "title": "Hoodie",
+    "category": "man",
+    "productCategory": "clothes",
+    "id": 9,
+    "details": [
+      {
+        "name": "man",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+  }, {
+    "itemGallery": "https://picsum.photos/id/325/150/200",
+    "price": "8.999",
+    "title": "Dress",
+    "category": "woman",
+    "productCategory": "clothes",
+    "id": 10,
+    "details": [
+      {
+        "name": "woman",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+
+  }, {
+    "itemGallery": "http://picsum.photos/id/281/150/200",
+    "price": "9.999",
+    "title": "Jeans",
+    "category": "man",
+    "productCategory": "clothes",
+    "id": 11,
+    "details": [
+      {
+        "name": "man",
+        "favorite": [
+          "cat",
+          "dog"
+        ]
+      }
+    ]
+  }
+]
+
