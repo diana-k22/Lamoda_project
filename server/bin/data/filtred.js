@@ -1,5 +1,6 @@
 import { products } from "./products"
 
+const productJson = require('./products.json')
 
 const getProductById = (productId) => {
     return products.find((product) => product.id.toString() === productId) //Возвращает продукт из массива удовлетворяющий условие 
@@ -16,10 +17,3 @@ export {
 
 // Перенести папку в сервер, по пути /api/product/'productId' возвращать json с данными из объекта выше(почитать про promise http )
 
-// export const CATEGORY = {
-//     woman: 'woman',
-//     man: 'man',
-//     children: 'children'
-// }
-
-// export const products = 

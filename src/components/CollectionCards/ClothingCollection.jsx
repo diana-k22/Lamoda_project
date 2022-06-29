@@ -1,14 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import '../../App.scss'
-import Pagination from '@mui/material/Pagination';
 import {CatalogProduct} from "./CatalogProduct";
 import { productCategoryFilter } from "../../data/products";
 import { StyledClothingCollection } from "./ClothingCollection.styled";
 
 
 export const ClothingCollection = (props) => { //Создали массив для вывода картинок
-
+console.log(props.products)
 
   return (
     <StyledClothingCollection>
@@ -29,12 +28,13 @@ export const ClothingCollection = (props) => { //Создали массив д�
 
           <div className="collection-gallery">
             {/* цикл, который перебирает массив с товарами и рендерит */}
+            
             {props.products.map((product) => <CatalogProduct 
               itemGallery={product.itemGallery} 
               price={product.price} 
               title={product.title} 
-              pathToProduct={`/products/${product.key}`} //Указываем путь к новой стр конкретного продукта
-              key={product.key}/>)}
+              pathToProduct={`/products/${product.id}`} //Указываем путь к новой стр конкретного продукта
+              key={product.id}/>)}
           </div>
         </div>
         {/* <Pagination/> */}
