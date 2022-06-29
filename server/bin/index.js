@@ -32,30 +32,6 @@ app.get('/products', (req, res) => {
       })
 })
 
-app.get('/products/women', (req, res) => {
-    console.log(req.query)
-
-      const pathJoin = path.join(__dirname, 'data', 'products.json')
-        fs.readFile(pathJoin, {encoding: 'utf8'}, (err, data) => {
-          if(err){
-            console.log(err)
-            return
-          }
-          res.writeHead(200, {
-           'Content-type': 'application/json',
-           'Access-Control-Allow-Origin':'*'
-        })
-        if(data.category === 'women') {
-          const products = data
-        
-          res.end(products)
-        }
-     
-
-      })
-})
-
-
 
 
 app.listen(PORT, () => {console.log('App started and listen port', PORT)});// вызовется, когда приложение запустится
