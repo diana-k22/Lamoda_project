@@ -2,9 +2,9 @@ import { ClothingCollection } from "../../components/CollectionCards/ClothingCol
 import SwiperSlide from '../../components/breadcrumbs/SwiperSlide';
 import { StyledPageForMan } from "./StorePageForMan.styled";
 import { useEffect, useState } from "react";
-import { filterCategory } from '../../api/api';
 
-export const StorePageForMan = () => {
+
+export const StorePageForMan = ({filterCategory}) => {
     const titles = ['Обувь', 'Одежда', 'Аксессуары', 'Premium', 'Спорт']
 
 

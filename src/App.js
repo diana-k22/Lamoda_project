@@ -16,6 +16,7 @@ import  GlobalStyles  from './components/styles/Global';
 
 
 
+
 const theme = {
   colors: {
     header: 'black',

@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import {getProductById} from "../../api/api"
 
 
 
-
-export const ProductDetails = () => {
+export const ProductDetails = ({getProductById}) => {
     const params = useParams(); // Создали переменную в которой вызвали useParams(). Параметры берем из урла
     const [product, setProduct] = useState({})
     useEffect(() => {

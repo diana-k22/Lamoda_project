@@ -4,12 +4,12 @@ import SwiperSlide from '../../components/breadcrumbs/SwiperSlide';
 import styled from 'styled-components'
 import { StyledPageForWomen } from "../PageWomen/StorePageForWomen.styled";
 import { useEffect } from "react";
-import { filterCategory } from "../../api/api";
+
 
 const StyledPageForChildren = styled(StyledPageForWomen)``
 
 
-export const StorePageForChildren = (props) => {
+export const StorePageForChildren = ({filterCategory}) => {
     const titleChild = ['Мальчикам', 'Девочкам', 'Новорожденным']
 
     const [productsForChildren, setProductsForChildren] = useState([])// useState - принимает 2 аргумента: 1-текущеее значение состояния, 2- ф-цию для его обновления

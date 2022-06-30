@@ -6,7 +6,7 @@ import {ClothingCollection} from '../../components/CollectionCards/ClothingColle
 // import {CATEGORY, categoryFilter} from '../../data/products';
 import { StyledPageForWomen } from './StorePageForWomen.styled';
 
-export const StorePageForWomen = ({props}) => {
+export const StorePageForWomen = ({filterCategory}) => {
   const titles = ['Обувь', 'Одежда', 'Аксессуары', 'Premium', 'Спорт']
   // const productsForWomen = categoryFilter(CATEGORY.woman)
 
