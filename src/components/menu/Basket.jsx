@@ -11,16 +11,16 @@ library.add( fab, fas, faHome, faMapMarker)
 
 const Basket = () => {
 
-const [govno, setGovno] = useState(0)
-const clickGovno = () => {
-    setGovno(govno - 1)
+const [numberOfGoods, setNumberOfGoods] = useState(0)
+const clickNumberOfGoods = () => {
+    setNumberOfGoods(numberOfGoods + 1)
 }    
 
     return(
         <StyledBasket>
-            <button className='basket-register'>Войти {govno}</button>
-            <FontAwesomeIcon icon="fa-solid fa-basket-shopping" className='basket-icon' />
-            <button onClick={clickGovno} className='basket'>Корзина</button>
+            <button  className='basket-register'>Войти </button>
+            <FontAwesomeIcon icon="fa-solid fa-basket-shopping " className='basket-icon' />
+            <button onClick={clickNumberOfGoods} className='basket'>{numberOfGoods} Корзина</button>
         </StyledBasket>
     )
 };
