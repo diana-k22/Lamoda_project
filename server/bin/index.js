@@ -1,10 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const data = require('./data/products.json');
 const path = require('path'); // импортируем path - это встроенная бибилиотека node.js 
 const fs = require('fs')
-// const userRouter = require('./../routes/users')
-// const productRouter = require('./../routes/products')
+
 
 const app = express(); // Запускаем приложение
 
@@ -70,9 +68,6 @@ console.log(req.params)
 
   })
 })
-
-   
-
 
 
 app.listen(PORT, () => {console.log('App started and listen port', PORT)});// вызовется, когда приложение запустится
