@@ -15,8 +15,6 @@ import { StyledNavWrapper } from './components/navigation/NavigationWrapper.styl
 import  GlobalStyles  from './components/styles/Global';
 
 
-
-
 const theme = {
   colors: {
     header: 'black',
