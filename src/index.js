@@ -15,7 +15,8 @@ import { StorePageForMan } from './pages/PageMan/StorePageForMan';
 import { StorePageForChildren } from './pages/PageForChildren/StorePageForChildren';
 import { NotFoundPage } from './pages/PageNotFound/NotFoundPage';
 import { ProductDetails } from './components/CollectionCards/ProductDetails';
-import {getProductById, filterCategory} from './api/api';
+import Signin from './components/menu/SignIn/Signin'
+
 
 
 
@@ -28,14 +29,11 @@ root.render(
         <Route path="/" element={<App />} >  {/**Указали у родителя шаблон App, который будет использоваться на всех страницах*/}
           <Route path='/' element={<MainContent />} /> {/**Здесь указываем путь к страницам */}
           <Route path="logo" element={<Logo />} />
-          <Route path="store-page-for-women" element={<StorePageForWomen  
-            filterCategory={filterCategory} />} />
-          <Route path="products/:productId" element={<ProductDetails
-            getProductById={getProductById}/>} /> {/**Создали роут для перехода страницы при клике, который читает айдишник  :- Способ сказать роуту что /:блабла является параметром - https://reactrouter.com/docs/en/v6/getting-started/overview#reading-url-parameters */}
-          <Route path="store-page-for-man" element={<StorePageForMan 
-            filterCategory={filterCategory}/>} />
-          <Route path="store-page-for-children" element={<StorePageForChildren 
-            filterCategory={filterCategory}/>} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="store-page-for-women" element={<StorePageForWomen />} />
+          <Route path="products/:productId" element={<ProductDetails />} /> {/**Создали роут для перехода страницы при клике, который читает айдишник  :- Способ сказать роуту что /:блабла является параметром - https://reactrouter.com/docs/en/v6/getting-started/overview#reading-url-parameters */}
+          <Route path="store-page-for-man" element={<StorePageForMan />} />
+          <Route path="store-page-for-children" element={<StorePageForChildren />} />
 
           <Route path="*" element={<NotFoundPage />} />
         </Route>

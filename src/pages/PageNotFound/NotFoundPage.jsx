@@ -1,6 +1,5 @@
 import { Button, ReversedButton } from './NotFoundPage.styled';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { StyledNotFound } from './NotFoundPage.styled';
 import { keyframes } from 'styled-components';
 

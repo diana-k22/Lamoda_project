@@ -5,11 +5,18 @@ import { Button } from '../../pages/PageNotFound/NotFoundPage.styled'
 
 
 export const HeaderButton = styled(Button)`
+    background-color: dodgerblue;
+    color: white;
     border-radius: 4px;
     cursor: pointer;
     border: none;
     padding: 12px 13px;
     margin: 0;
+
+    &:hover {
+        background-color: #2f87e9;
+        color: white;
+    }
 `
 
 export const Input = styled.input`
@@ -19,7 +26,7 @@ export const Input = styled.input`
     outline: none;
     border-radius: 4px;
     background-color: ${props => props.inputBackground || 'rgb(245, 243, 243);'}; // Здесь мы через пропсы прописываем inputBackground, чтобы обратиться можно было в компоненте по этому классу и передатть новое значение
-    color: ${props => props.inputColor || "palevioletred"};
+    color: ${props => props.inputColor || "rgb(207 204 204)"};
 
     &:hover {
             background-color: transparent;

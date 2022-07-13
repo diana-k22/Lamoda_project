@@ -17,7 +17,7 @@ const Main = () => {
             <Flex>
                 <div className='main-sale'>
                     <figure className='main-slider'>
-                    <img className='main-slider__img' src="http://unsplash.it/150/200?random&amp;gravity=center" alt="img" />
+                    <img className='main-slider__img' src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png" alt="img" />
                         <figcaption className='main-slider__text'>
                             <span className='main-slider__subtitle'>cкидки до 30%</span>
                             <span className='main-slider__title'> на новинки</span>
@@ -31,7 +31,7 @@ const Main = () => {
 
                 <div className='main-content'>
                 <figure className='main-section'>
-                    <img className='main-section__img' src="http://unsplash.it/150/200?random&amp;gravity=center" alt="img" />
+                    <img className='main-section__img' src="https://i.etsystatic.com/15150209/c/1365/1083/0/510/il/67b3c2/1582245462/il_340x270.1582245462_1jh5.jpg" alt="img" />
                         <figcaption className='main-section__text'>
                             <span className='main-section__subtitle'>Скидки до 30%</span>
                             <span className='main-section__title'> на новинки</span>
@@ -39,7 +39,7 @@ const Main = () => {
                     </figure>
 
                     <figure className='main-section__bottom'>
-                    <img className='main-section__img' src="http://unsplash.it/150/200?random&amp;gravity=center" alt="img" />
+                    <img className='main-section__img' src="https://ae01.alicdn.com/kf/Hfa1983a951f84d42b3c7a89f6f46580dK.jpg_.webp" alt="img" />
                         <figcaption className='main-section__text'>
                             <span className='main-section__subtitle'>Скидки до 30%</span>
                             <span className='main-section__title'> на новинки</span>

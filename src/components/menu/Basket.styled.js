@@ -1,28 +1,16 @@
 import styled from 'styled-components';
 
 export const StyledBasket = styled.div`
+    display: flex;
+    align-items: center;
 
-    .basket-register {
-        border: none;
-        background-color: #fff;
-        font-size: 16px;
-        color: #888;
-        padding-right: 21px;
-        margin-left: 95px;
-
-        &:hover {
-            transition: color .2s linear;
-            color: var(--secondaryLabelColor);
-            cursor: pointer;
-        }
-    }
 
     .basket-icon {
         cursor: pointer;
         color: #888;
 
         &:hover {
-            color: var(--secondaryLabelColor);
+            color: #1789dc;
             }
     }
 
@@ -31,6 +19,12 @@ export const StyledBasket = styled.div`
         border: none;
         background-color: #fff;
         cursor: pointer;
+
+        :hover {
+            transition: color .2s linear;
+            color: #1789dc;
+     
+        }
     }
 
 `
