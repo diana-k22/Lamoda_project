@@ -16,6 +16,8 @@ import { StorePageForChildren } from './pages/PageForChildren/StorePageForChildr
 import { NotFoundPage } from './pages/PageNotFound/NotFoundPage';
 import { ProductDetails } from './components/CollectionCards/ProductDetails';
 import Signin from './components/menu/SignIn/Signin'
+import { filterCategory, getProductById } from './api/api';
+import SignUp from './components/menu/signUp/SignUp';
 
 
 
@@ -30,10 +32,15 @@ root.render(
           <Route path='/' element={<MainContent />} /> {/**Здесь указываем путь к страницам */}
           <Route path="logo" element={<Logo />} />
           <Route path="/signin" element={<Signin />} />
-          <Route path="store-page-for-women" element={<StorePageForWomen />} />
-          <Route path="products/:productId" element={<ProductDetails />} /> {/**Создали роут для перехода страницы при клике, который читает айдишник  :- Способ сказать роуту что /:блабла является параметром - https://reactrouter.com/docs/en/v6/getting-started/overview#reading-url-parameters */}
-          <Route path="store-page-for-man" element={<StorePageForMan />} />
-          <Route path="store-page-for-children" element={<StorePageForChildren />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="store-page-for-women" element={<StorePageForWomen  
+            filterCategory={filterCategory} />} />
+          <Route path="products/:productId" element={<ProductDetails
+            getProductById={getProductById}/>} /> {/**Создали роут для перехода страницы при клике, который читает айдишник  :- Способ сказать роуту что /:блабла является параметром - https://reactrouter.com/docs/en/v6/getting-started/overview#reading-url-parameters */}
+          <Route path="store-page-for-man" element={<StorePageForMan 
+            filterCategory={filterCategory}/>} />
+          <Route path="store-page-for-children" element={<StorePageForChildren 
+            filterCategory={filterCategory}/>} />
 
           <Route path="*" element={<NotFoundPage />} />
         </Route>

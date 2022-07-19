@@ -5,7 +5,7 @@ import { fas, faHome, faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { StyledBasket } from './Basket.styled';
 import Signin from './SignIn/Signin.jsx';
-import { Login } from './Login/Login';
+import { Login } from './login/Login';
 
 
 library.add( fab, fas, faHome, faMapMarker)

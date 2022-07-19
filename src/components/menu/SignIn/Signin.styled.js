@@ -68,13 +68,30 @@ export const StyledSignin = styled.div`
             font-size: 32px;
             line-height: 40px;
             color: #23262F;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
+        }
+
+        &__title-small {
+            margin: 0;
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 20px;
+            color: #23262F;
+        }
+
+        &__subtitle {
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+            padding-bottom: 10px;
         }
 
         &__social {
             display: flex;
             justify-content: center;
             cursor: pointer;
+            padding: 15px 0;
         }
 
         &__img {
@@ -85,67 +102,66 @@ export const StyledSignin = styled.div`
             transform: scale(1.2);
         }
 
-        &__subtitle {
-            text-align: center;
-            font-weight: 500;
-        }
-
         &__form {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    &__input {
-        margin: 0 0 15px 0;
-        padding: 0;
-        padding-bottom: 3px;
-        padding-left: 15px;
-        box-sizing: border-box;
-        border: 2px solid transparent;
-        width: 384px;
-        height: 48px;
-        font-size: 14px;
-        line-height: 17px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-        border-radius: 15px;
-        background-color: #fff;
-
-        :hover {
-            border: 2px solid black;
         }
-    }
 
-    &__submit {
-        width: 384px;
-        height: 48px;
-        color: white;
-        border-radius: 90px;
-        border-color: rgba(0, 0, 0, 0.2);
-        background-color: #e8eaf3;
-        margin-bottom: 10px;
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 16px;
-        margin-top: 10px;
-        transition: transform .5s, box-shadow .5s;
-        background-color: #3772FF;
-    }
+        &__input {
+            margin: 0 0 15px 0;
+            padding: 0;
+            padding-bottom: 3px;
+            padding-left: 15px;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+            width: 384px;
+            height: 48px;
+            font-size: 14px;
+            line-height: 17px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            background-color: #fff;
 
-    &__link {
-        text-decoration: none;
-        margin-bottom: 20px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        color: #777E91;
-        transition: color .3s linear;
-    }
-
-        &__link:hover {
-            color: #23262F;
+            :hover {
+                border: 2px solid black;
+            }
         }
+
+        &__submit {
+            width: 384px;
+            height: 48px;
+            color: white;
+            border-radius: 90px;
+            border-color: rgba(0, 0, 0, 0.2);
+            background-color: #e8eaf3;
+            margin: 10px 0 18px 0;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            transition: transform .5s, box-shadow .5s;
+            background-color: #3772FF;
+
+            :hover {
+                transform: scale(1.02);
+                box-shadow: 5px 5px 5px #777E91;
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #777E91;
+            transition: color .3s linear;
+        }
+
+            &__link:hover {
+                color: #23262F;
+            }
 
     }
  
