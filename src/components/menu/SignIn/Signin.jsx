@@ -1,26 +1,62 @@
 import {StyledSignin} from "./Signin.styled.js"
-import Logo from "../logo"
+import Logo from "../logo/logo"
 import twitter from "./imgSignIn/card-twitter-btn.svg"
 import instagram from "./imgSignIn/card-instagram-btn.svg"
 import facebook from "./imgSignIn/card-facebook-btn.svg" 
-import {useRef} from "react"
+import {useRef, useState, Navigate} from "react"
 import { Link, useNavigate } from 'react-router-dom'
+// import {authBD} from '../../../authBD'
+
 
 const Signin = () => {
   const modalRef = useRef()
   let history = useNavigate();
 
+  // const userInfo = () => {
+  //   fetch('http://localhost:4001/users')
+  //   .then((response) => {
+  //     return response.json();
+  //   })
+  //   .then((data) => {
+  //     console.log(data);
+  //   });
+  
+  // }
+
+  const [formParams, setFormParams] = useState({ 
+    email:'', 
+    password:''
+  })
+  const hendleChange = (event) => { //это функция отслеживает что написано в инпуте и записывает в переменные в стейте
+    const {name, value} = event.target
+
+    setFormParams((data) => ({
+      ...data, 
+      [name]: value
+    }))
+
+  }
+  console.log(formParams)
+
 
   const onSubmit = (event) => {
     event.preventDefault()
+  
+    // if(!formParams.email === authBD.email && !formParams.password === authBD.password){
+    //   return console.log('err');
+    // }
+    // <Link to='/store-page-for-children'/>
+
+    // <Redirect to='/store-page-for-children'></Redirect>
   }
 
   const closeModal = e => {
+    console.log(modalRef.current)
     if(modalRef.current === e.target) {
       history("/");
+      
     }
   }
-
 
   return (
     <StyledSignin>
@@ -48,13 +84,19 @@ const Signin = () => {
         <input 
           type="email"
           className='popup__input'
-          placeholder='email'/>
+          placeholder='email'
+          name='email'
+          required
+          onChange={hendleChange}/>
         <input
           type='password'
           className='popup__input'
-          placeholder='password' />
+          placeholder='password'
+          name='password'
+          required
+          onChange={hendleChange} />
         <Link to='/'>
-          <button type="submit" className="popup__submit">Войти</button>
+          <button onClick={onSubmit} type="submit" className="popup__submit">Войти</button>
         </Link>
         <Link to='/signup' className='popup__link'>Зарегистрироваться</Link>
       </form>

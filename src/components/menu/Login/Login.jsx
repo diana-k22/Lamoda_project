@@ -12,14 +12,12 @@ const StyledLogin = styled.div`
     margin-left: 95px;
 
     :hover {
-        transform: scale(1.02);
-        color: #1789dc;
-
+        color: black;
         cursor: pointer;
+        transition: color .2s linear;
     }
 }
 ` 
-
 
 export const Login = () => {
     return(

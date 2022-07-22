@@ -7,14 +7,14 @@ const Menu = () => {
     
 const [activeClass, setActiveClass] = useState(false)
 const clickActive = () => {
-    setActiveClass(true)
+    setActiveClass(false)
 }
 const clickInActive = () => {
-    setActiveClass(false)
+    setActiveClass(true)
 }
     return(
     <StyledMenu >
-        <NavLink onClick={clickInActive} to='store-page-for-women' className={activeClass ? 'menu-link' : 'active-menu-link'} >Женщинам</NavLink> {/** NavLink - делает активную ссылку. Нужно добавить в css класс .active и накинуть стильки */}
+        <NavLink onClick={clickInActive} to='store-page-for-women' className={activeClass ? 'active-menu-link' : 'menu-link'} >Женщинам</NavLink> {/** NavLink - делает активную ссылку. Нужно добавить в css класс .active и накинуть стильки */}
         <NavLink onClick={clickActive} to='store-page-for-man' className={({isActive}) => (isActive ? 'active-menu-link' : 'menu-link')}>Мужчинам</NavLink>
         <NavLink onClick={clickActive} to='store-page-for-children' className={({isActive}) => (isActive ? 'active-menu-link' : 'menu-link')}>Детям</NavLink> 
     </StyledMenu>

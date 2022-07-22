@@ -2,8 +2,7 @@ import React from 'react';
 import './App.scss';
 import Header from './components/header/Header';
 import Menu from './components/menu/Menu'
-import Logo from './components/menu/logo';
-import Basket from './components/menu/Basket';
+import Logo from './components/menu/logo/logo';
 import Navigation from './components/navigation/Navigation';
 import NavForm from './components/navigation/NavForm';
 import Footer from './components/footer/Footer';
@@ -13,6 +12,9 @@ import { Container } from './components/styles/Container.styled';
 import { MenuWrapperStyled } from './components/menu/MenuWrapper.styled';
 import { StyledNavWrapper } from './components/navigation/NavigationWrapper.styled';
 import  GlobalStyles  from './components/styles/Global';
+import { ButtonProfile } from './components/profile/ButtonProfile';
+import LoginBasket from './components/menu/login-basket/LoginBasket';
+
 
 
 const theme = {
@@ -35,8 +37,12 @@ function App() { {/** Это шаблон главной страницы  */}
           <Container>
             <MenuWrapperStyled>
               <Menu />  
-              <Logo />
-              <Basket />
+              <Logo/>
+
+              {/* <ButtonProfile/> */}
+              
+              <LoginBasket/>
+             
             </MenuWrapperStyled>
           </Container>
 

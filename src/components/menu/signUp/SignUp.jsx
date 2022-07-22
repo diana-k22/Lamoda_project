@@ -1,5 +1,5 @@
 import {StyledSignUp} from "./SignUp.styled"
-import Logo from "../logo"
+import Logo from "../logo/logo"
 import twitter from "../SignIn/imgSignIn/card-twitter-btn.svg"
 import instagram from "../SignIn/imgSignIn/card-instagram-btn.svg"
 import facebook from "../SignIn/imgSignIn/card-facebook-btn.svg" 
@@ -9,12 +9,22 @@ import { Link, useNavigate } from 'react-router-dom'
 const SignUp = () => {
   const modalRef = useRef()
   let history = useNavigate();
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
 
+  const [params, setParams] = useState({name:'', email:'', password:'', repeatPassword:''})
+
+  const hendleChange = (event) => { //это функция отслеживает что написано в инпуте и записывает в переменные в стейте
+    const {name, value} = event.target // диструктуризируем объект евент(name- это класс в инпуте, value-это то что вводит пользователь в инпут)
+   
+    setParams((data) => ({ // data - это объект который находится в стейте(name:'', email:'', password:'', repeatPassword:'')
+      ...data, 
+      [name]: value
+    }))
+  }
+  console.log(params)
 
   const onSubmit = (event) => {
     event.preventDefault()
+
   }
 
   const closeModal = e => {
@@ -42,23 +52,30 @@ const SignUp = () => {
                 <input 
                 type="text"
                 className='popup__input'
-                placeholder='name'/>
+                placeholder='name'
+                name='name'
+                onChange={hendleChange}/>
                 <input 
                 type="email"
                 className='popup__input'
-                placeholder='email'/>
-                value={email}
-                setValue={setEmail}
+                placeholder='email'
+                name='email'
+                required
+                onChange={hendleChange}/>
                 <input
                 type='password'
                 className='popup__input'
-                placeholder='password' />
-                value={password}
-                setValue={setPassword}
+                placeholder='password'
+                name='password'
+                required
+                onChange={hendleChange} />
                 <input
                 type='password'
                 className='popup__input'
-                placeholder='repeat password' />
+                placeholder='repeat password'
+                name='repeatPassword'
+                required
+                onChange={hendleChange} />
                 <div className='popup__checkbox-block'>
                     <input
                     type="checkbox"
@@ -66,7 +83,7 @@ const SignUp = () => {
                     id="license"
                     name="license"
                     value="true"/>
-                    <label for="license" className='popup__license'>accept the license agreement</label>
+                    <label htmlFor="license" className='popup__license'>accept the license agreement</label>
                 </div>
                 <Link to='/signin'>
                 <button type="submit" className="popup__submit">Зарегистрироваться</button>
