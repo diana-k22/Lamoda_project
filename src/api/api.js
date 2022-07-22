@@ -17,3 +17,32 @@ export const filterCategory = (category) => {
                 return json
             })
 }
+
+
+const checkResponse = (res) => {
+    console.log('chekResStart')
+    if (res.ok) {
+      return res.json();
+    }
+    return res.json()
+      .then((data) => {
+        throw new Error(data.message[0].messages[0].message);
+      })
+  }
+
+
+export const authorization = (email, password) => {
+    console.log('start')
+    return fetch('http://localhost:4001/login', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email,
+          password
+        })
+      })
+      .then(checkResponse)
+  }

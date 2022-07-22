@@ -21,7 +21,6 @@ import SignUp from './components/menu/signUp/SignUp';
 import { ProfilePage } from './pages/PageProfile';
 import { AuthorizationStatus} from './components/const'
 import { PrivateRouter } from './components/privateRoute/PrivateRouter';
-import { BasketButton } from './components/menu/basket/BasketButton';
 
 
 
@@ -45,7 +44,7 @@ root.render(
             path="profile/page"
             element={
             <PrivateRouter
-            authorizationStatus={AuthorizationStatus.NoAuth}
+              authorizationStatus={AuthorizationStatus.NoAuth}
             >
                <ProfilePage/>
             </PrivateRouter> 

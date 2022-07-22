@@ -3,25 +3,28 @@ import Logo from "../logo/logo"
 import twitter from "./imgSignIn/card-twitter-btn.svg"
 import instagram from "./imgSignIn/card-instagram-btn.svg"
 import facebook from "./imgSignIn/card-facebook-btn.svg" 
-import {useRef, useState, Navigate} from "react"
+import {useRef, useState, useEffect} from "react"
 import { Link, useNavigate } from 'react-router-dom'
-// import {authBD} from '../../../authBD'
+import { authorization } from "../../../api/api.js"
+
 
 
 const Signin = () => {
   const modalRef = useRef()
   let history = useNavigate();
 
-  // const userInfo = () => {
-  //   fetch('http://localhost:4001/users')
-  //   .then((response) => {
-  //     return response.json();
-  //   })
-  //   .then((data) => {
-  //     console.log(data);
-  //   });
+
+// useEffect(() => {
+//   fetch('http://localhost:4001/login')
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   });
+// }, [])
   
-  // }
+  
 
   const [formParams, setFormParams] = useState({ 
     email:'', 
@@ -36,22 +39,27 @@ const Signin = () => {
     }))
 
   }
-  console.log(formParams)
+ 
+  const handleLogin = ({ email, password }) => {
+    return authorization(email, password)
+      .then((data) => {
+        console.log(data)
+        // if (data.token) {
+        //   localStorage.setItem('token', data.token);
+        //   tokenCheck();
+        // }
+      })
+      .catch ((err) => console.log(err))
+  }
 
 
   const onSubmit = (event) => {
     event.preventDefault()
-  
-    // if(!formParams.email === authBD.email && !formParams.password === authBD.password){
-    //   return console.log('err');
-    // }
-    // <Link to='/store-page-for-children'/>
-
-    // <Redirect to='/store-page-for-children'></Redirect>
+    console.log('Onsubmit Start')
+    handleLogin({email: formParams.email, password: formParams.password})
   }
 
   const closeModal = e => {
-    console.log(modalRef.current)
     if(modalRef.current === e.target) {
       history("/");
       
@@ -95,9 +103,9 @@ const Signin = () => {
           name='password'
           required
           onChange={hendleChange} />
-        <Link to='/'>
-          <button onClick={onSubmit} type="submit" className="popup__submit">Войти</button>
-        </Link>
+        {/* <Link to='/'> */}
+          <button type="submit" className="popup__submit">Войти</button>
+        {/* </Link> */}
         <Link to='/signup' className='popup__link'>Зарегистрироваться</Link>
       </form>
       </div>
