@@ -4,7 +4,7 @@ import twitter from "./imgSignIn/card-twitter-btn.svg"
 import instagram from "./imgSignIn/card-instagram-btn.svg"
 import facebook from "./imgSignIn/card-facebook-btn.svg" 
 import {useRef, useState, useEffect} from "react"
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { authorization } from "../../../api/api.js"
 
 
@@ -42,12 +42,8 @@ const Signin = () => {
  
   const handleLogin = ({ email, password }) => {
     return authorization(email, password)
-      .then((data) => {
-        console.log(data)
-        // if (data.token) {
-        //   localStorage.setItem('token', data.token);
-        //   tokenCheck();
-        // }
+      .then((data) => { //в дате получаем токен
+        localStorage.setItem('token', data.accessToken); // в браузере сохр токен
       })
       .catch ((err) => console.log(err))
   }

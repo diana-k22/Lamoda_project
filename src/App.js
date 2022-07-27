@@ -38,8 +38,6 @@ function App() { {/** Это шаблон главной страницы  */}
             <MenuWrapperStyled>
               <Menu />  
               <Logo/>
-
-              {/* <ButtonProfile/> */}
               
               <LoginBasket/>
              

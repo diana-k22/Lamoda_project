@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
-import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import Logo from './components/menu/logo/logo';
 import { MainContent } from './pages/PageMain/MainContent';
 import { StorePageForWomen } from './pages/PageWomen/StorePageForWomen';
@@ -27,6 +26,7 @@ import { PrivateRouter } from './components/privateRoute/PrivateRouter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
